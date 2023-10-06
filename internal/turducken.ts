@@ -1,10 +1,10 @@
 import _words from "lodash.words";
 
+type Turduckenable = string | string[];
+
 const bisect = (str: string) => {
   return [str.slice(0, str.length / 2), str.slice(str.length / 2, str.length)];
 };
-
-type Turduckenable = string | string[];
 
 /**
  * Converts an array of tokens, or a string consisting of an array of tokens,
@@ -29,9 +29,6 @@ export function turducken(t: Turduckenable) {
     return "";
   }
 
-  // ["turkey", "duck", "chicken"] => "turducken"
-  // for all words which precede the halfway point of the array (inclusive), use the first half
-  // for all words which come after the halfway point of the array, use the second half
   const halves = words.map(bisect);
   return halves
     .map(([l, r], i, arr) => {
@@ -61,9 +58,6 @@ export function keyckchi(t: Turduckenable) {
     return "";
   }
 
-  // ["turkey", "duck", "chicken"] => "turducken"
-  // for all words which precede the halfway point of the array (inclusive), use the first half
-  // for all words which come after the halfway point of the array, use the second half
   const halves = words.map(bisect);
   return halves
     .map(([l, r], i, arr) => {
