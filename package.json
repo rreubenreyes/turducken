@@ -1,7 +1,8 @@
 {
   "name": "turducken",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gobble gobble",
+  "repository": "https://github.com/rreubenreyes/turducken",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --declaration",
