@@ -11,10 +11,10 @@ const bisect = (str: string) => {
  * into a turducken case string.
  *
  * A turducken case word is constructed by joining an array of tokens by the following logic:
- *   - If the token precedes the halfway point of the array (rounding down to the nearest integer),
+ *   - If the token precedes (inclusive) the halfway point of the array (rounding halfway point up to the nearest integer),
  *     remove all characters from the second half of the token.
- *   - If the token comes after the halfway point of the array (rounding down to the nearest integer),
- *     remove all characters from the first half of the token.
+ *   - If the token comes after (exclusive) the halfway point of the array
+ *     (rounding halfway point up to the nearest integer), remove all characters from the first half of the token.
  *   - Join the remaining halves into a single string.
  */
 export function turducken(t: Turduckenable) {
