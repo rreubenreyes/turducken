@@ -1,0 +1,31 @@
+{
+  "name": "turducken",
+  "version": "1.0.0",
+  "description": "Descrdescriptioniption",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --declaration",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --tsconfig tsconfig.json",
+    "prepare": "npm run build; npm run docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reuben Reyes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash.words": "^4.2.7",
+    "@types/node": "^20.8.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "typedoc": "^0.25.1",
+    "typedoc-plugin-markdown": "^3.16.0",
+    "typedoc-plugin-missing-exports": "^2.1.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "lodash.words": "^4.2.0"
+  }
+}
